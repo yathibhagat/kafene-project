@@ -8,6 +8,7 @@ $(document).ready(function () {
         localStorage.setItem('loginStatus', false)
         location.assign('./index.html')
     }
+    // api call
     $.get("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/products",
         function (data) {
             data.map((item,pos) => {    

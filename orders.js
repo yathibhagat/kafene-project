@@ -9,6 +9,7 @@ $(document).ready(function () {
         location.assign('./index.html')
     }
     var responseArr;
+    // api call for getting orders
     $.get("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/orders",
         function (data) {
             responseArr = data;
